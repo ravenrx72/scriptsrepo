@@ -173,10 +173,10 @@ def usage():
     print()
     print()
     print("Examples: ")
-    print("bhpnet.py -t 192.168.0.1 -p 5555 -l -c command shell")
-    print("bhpnet.py -t 192.168.0.1 -p 5555 -l -u=c:\\target.exe Upload a file")
-    print("bhpnet.py -t 192.168.0.1 -p 5555 -l -e=\"cat /etc/passwd\" execute a command")
-    print("echo 'ABCDEFGHI' | ./bhpnet.py -t 192.168.11.12 -p 135 echo text to a server")
+    print("bhpnet.py -t 192.168.0.1 -p 5555 -l -c (command shell)")
+    print("bhpnet.py -t 192.168.0.1 -p 5555 -l -u=c:\\target.exe (Upload a file)")
+    print("bhpnet.py -t 192.168.0.1 -p 5555 -l -e=\"cat /etc/passwd\" (execute a command)")
+    print("echo 'ABCDEFGHI' | ./bhpnet.py -t 192.168.11.12 -p 135 (echo text to a server)")
     sys.exit(0)
 
 
