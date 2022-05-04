@@ -26,6 +26,7 @@ def handle_client(client_socket):
         request = sock.recv(1024)
         print(f'[*] Received: {request.decode("utf-8")}')
         sock.send(b'ACK')
-        
-if _name_ == '_main_':
-    main()
+
+
+if __name__ == '__main__':
+  main()
