@@ -1,5 +1,5 @@
 #!/bin/sh
-# Quick script for nslookup with file input
+# Quick bash script for nslookup with file input
 for IP in `cat ./ip.txt`
 do
   printf "$IP\t"
