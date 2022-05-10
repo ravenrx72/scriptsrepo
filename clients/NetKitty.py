@@ -1,3 +1,5 @@
+#!/bin/python
+
 import sys
 import socket
 import getopt
@@ -151,9 +153,9 @@ def client_sender(buffer):
 
 
 def usage():
-    print("Netcat Replacement")
+    print("NetKitty a 'Cat' Replacement")
     print()
-    print("Usage: bhpnet.py -t target_host -p port")
+    print("Usage: NetKitty.py -t target_host -p port")
     print("-l --listen - listen on [host]:[port] for incoming " "connections")
     print("-e --execute=file_to_run  - execute the given file upon receiving " "a connection")
     print("-c --command  - initialize a command shell")
@@ -161,10 +163,10 @@ def usage():
     print()
     print()
     print("Examples: ")
-    print("bhpnet.py -t 192.168.0.1 -p 5555 -l -c (command shell)")
-    print("bhpnet.py -t 192.168.0.1 -p 5555 -l -u=c:\\target.exe (Upload a file)")
-    print("bhpnet.py -t 192.168.0.1 -p 5555 -l -e=\"cat /etc/passwd\" (execute a command)")
-    print("echo 'ABCDEFGHI' | ./bhpnet.py -t 192.168.11.12 -p 135 (echo text to a server)")
+    print("NetKitty.py -t 192.168.0.1 -p 5555 -l -c (command shell)")
+    print("NetKitty.py -t 192.168.0.1 -p 5555 -l -u=c:\\target.exe (Upload a file)")
+    print("NetKitty.py -t 192.168.0.1 -p 5555 -l -e=\"cat /etc/passwd\" (execute a command)")
+    print("echo 'ABCDEFGHI' | ./NetKitty.py -t 192.168.11.12 -p 135 (echo text to a server)")
     sys.exit(0)
 
 
