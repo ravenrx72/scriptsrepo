@@ -33,7 +33,7 @@ def get_price (price, tax):
 price = get_price(100,8.25)
 print(price)
 
-#Deciding functions
+#Deciding functions, 
 def calculate (operator,x,y):
     if operator == "+":
         print(x + y)
