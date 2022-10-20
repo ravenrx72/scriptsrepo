@@ -1,2 +1,2 @@
 # scriptsrepo
-Simple scripts for every day penetration task..
+Simple scripts for pen test.
