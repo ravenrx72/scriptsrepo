@@ -1,0 +1,1 @@
+powershell.exe -NoProfile -ExecutionPolicy Bypass -File "C:\Users\josh\OneDrive\Documents\GitHub\scriptsrepo\deploy\seo_agent_simple.ps1" -CsvPath "C:\Users\josh\OneDrive\Documents\AIComply360\Marketing\seo\seo.csv" -SecretPath "C:\Users\josh\OneDrive\Documents\AIComply360\Marketing\seo\wp_app_pw.secret" -MaxItems 1 -Mode draft -AutoImage -ImageStyle "cyberpunk neon noir"

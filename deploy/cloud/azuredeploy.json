@@ -1,0 +1,41 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "location": {
+      "type": "string",
+      "defaultValue": "[resourceGroup().location]",
+      "metadata": { "description": "Azure region for resources." }
+    },
+    "environment": {
+      "type": "string",
+      "defaultValue": "PRD",
+      "allowedValues": [ "DEV", "TST", "PRD" ],
+      "metadata": { "description": "Deployment environment." }
+    },
+    "prefix": {
+      "type": "string",
+      "defaultValue": "aic360",
+      "minLength": 2,
+      "maxLength": 12,
+      "metadata": { "description": "Resource naming prefix." }
+    },
+    "adminUsername": {
+      "type": "string",
+      "defaultValue": "ravenx7",
+      "metadata": { "description": "Admin username for applicable resources (e.g., VM)." }
+    },
+    "adminPassword": {
+      "type": "secureString",
+      "metadata": { "description": "Admin password (secureString). Avoid committing secrets to source control." }
+    },
+    "tags": {
+      "type": "object",
+      "defaultValue": { "Company": "AICOMPLY360" },
+      "metadata": { "description": "Base tags applied to all resources." }
+    }
+  },
+  "variables": {},
+  "resources": [],
+  "outputs": {}
+}

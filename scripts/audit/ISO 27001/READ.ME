@@ -1,0 +1,14 @@
+# ISO 27001 – Technological Controls Audit (Windows)
+
+This PowerShell audit collects evidence aligned to ISO 27001 Annex A technological themes
+(e.g., access control, endpoint protection, logging/monitoring, configuration, encryption, network security).
+It produces time-stamped JSON and CSV summaries in a local `reports` folder.
+
+> ⚠️ This is a **read-only** audit. It does **not** change system configuration.
+
+## Run
+
+```powershell
+# From repo root
+Set-Location "scripts\audit\ISO 27001"
+.\Invoke-ISO27001TechAudit.ps1 -OutDir .\reports
